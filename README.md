@@ -1,2 +1,9 @@
 Splat-Generator
 ===============
+
+This repo. contains 3 files namely:
+  1. main.cpp
+  2. plyloader.h
+  3. plyLoader_C_Binary.cpp
+
+plyloader_C_Binary.cpp is the fle having all neccessary function needed to read a .PLY point cloud file and generate a splatted .PLY file, so that it can be rendered using BLENDER.
