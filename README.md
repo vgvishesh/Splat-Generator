@@ -12,4 +12,5 @@ plyloader_C_Binary.cpp is the fle having all neccessary function needed to read 
 male_binary.ply : point cloud file.
 
 .exe usage from windows command line
+
 SplatGenerator.exe inputBinaryPlyFile.ply outputfile.ply
