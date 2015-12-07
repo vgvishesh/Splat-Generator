@@ -13,12 +13,13 @@
 
 using namespace std;
 
-void main()
+int main()
 {
 	PLYModel MODEL("test_m_bin.ply");
 	//MODEL.PLYSplatedModel("test_computed_ascii.ply",0.05);
 	cout<<"\nModel Generated....\n";
 	system("pause");
+	return 0;
 }
 
 
