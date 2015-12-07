@@ -27,8 +27,8 @@ PLYModel::PLYModel() {
 struct data
 {
 	float _x, _y, _z;
-    float _nx, _ny, _nz;
-    unsigned char _r, _g, _b, _a;
+    	float _nx, _ny, _nz;
+    	unsigned char _r, _g, _b, _a;
 	data(){
 		 _x= _y=_z=_nx=_ny=_nz=_r=_g=_b=_a=0;
 	}
@@ -66,24 +66,24 @@ struct index1
 
 
 // Function to Read the binary .PLY file
-PLYModel::PLYModel(const char* filename) {
-    
-	struct data Values;
+PLYModel::PLYModel(const char* filename) 
+{
+    struct data Values;
 	
     string line;
     string s1, s2;
 
     ifstream inputPly;
-	inputPly.open(filename,ios::binary);
-
-	if (!inputPly.is_open()) {
-        cerr << "Couldn't open " << filename << '\n';
-        exit(1);
+    inputPly.open(filename,ios::binary);
+    if (!inputPly.is_open()) 
+    {
+    	cerr << "Couldn't open " << filename << '\n';
+    	exit(1);
     }
 
 	cout<<"\n File reading started";
 
-    getline(inputPly, line);
+    	getline(inputPly, line);
 	while(line.compare("vertex")!=0)
 	{
 		getline(inputPly, line,' ');
