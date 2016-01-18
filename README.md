@@ -14,3 +14,6 @@ male_binary.ply : point cloud file.
 .exe usage from windows command line
 
 SplatGenerator.exe inputBinaryPlyFile.ply outputfile.ply
+
+Example command to run the exe, using the model that is there in the repository:
+SplatGenerator.exe male_Binary.ply output_file.ply
